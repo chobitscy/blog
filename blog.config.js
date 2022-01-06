@@ -1,22 +1,21 @@
 const BLOG = {
-  title: 'CRAIGARY',
-  author: 'Craig Hart',
+  title: 'chobit',
+  author: 'chobit blog',
   email: 'i@craigary.net',
-  link: 'https://nobelium.vercel.app',
+  link: 'https://chobit.vercel.app',
   description: 'This gonna be an awesome website.',
-  lang: 'en-US', // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']
-  appearance: 'auto', // ['light', 'dark', 'auto'],
+  lang: 'en-US',
+  appearance: 'light', // ['light', 'dark', 'auto'],
   font: 'sans-serif', // ['sans-serif', 'serif']
   lightBackground: '#ffffff', // use hex value, don't forget '#' e.g #fffefc
-  darkBackground: '#18181B', // use hex value, don't forget '#'
+  darkBackground: '#111827', // use hex value, don't forget '#'
   path: '', // leave this empty unless you want to deploy Nobelium in a folder
-  since: 2021, // If leave this empty, current year will be used.
+  since: '', // if leave this empty, current year will be used.
   postsPerPage: 7,
   sortByDate: false,
-  showAbout: true,
-  showArchive: true,
-  autoCollapsedNavBar: false, // The automatically collapsed navigation bar
-  ogImageGenerateURL: 'https://og-image-craigary.vercel.app', // The link to generate OG image, don't end with a slash
+  showAbout: true, // WIP
+  showArchive: true, // WIP
+  autoCollapsedNavBar: false, // the automatically collapsed navigation bar
   socialLink: 'https://twitter.com/craigaryhart',
   seo: {
     keywords: ['Blog', 'Website', 'Notion'],
@@ -54,8 +53,7 @@ const BLOG = {
       host: 'https://cusdis.com', // data-host, change this if you're using self-hosted version
       scriptSrc: 'https://cusdis.com/js/cusdis.es.js' // change this if you're using self-hosted version
     }
-  },
-  isProd: process.env.VERCEL_ENV === 'production' // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables)
+  }
 }
 // export default BLOG
 module.exports = BLOG
